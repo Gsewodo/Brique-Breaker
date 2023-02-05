@@ -1,0 +1,162 @@
+
+ body{
+   
+
+        /*background-color:rgb(138, 130, 130);*/
+        background-color:  rgb(199, 201, 206);
+        display:grid;
+        height: auto;
+        width: auto;
+        grid-template-columns: 100%;
+        grid-template-rows : auto;
+        grid-template-areas: "titre titre tire"
+                             "scene scene scene";
+                            
+        grid-gap: 10px; 
+    
+    
+    
+ }
+
+ .titre{
+    font-size: 2.1em;
+    font-style: normal;
+    
+    text-align: center;
+    text-overflow: clip;
+   /* background-color: rgb(113, 159, 160);*/
+   background-color:  rgb(77, 80, 90);
+    color:rgb(138, 130, 130);
+    background-color: rgb(45, 49, 109);
+    margin: auto; padding: 16.5px;
+    
+
+    grid-area: titre;
+    
+}
+  #sousTitre{
+    font-size: 0.45em;
+    
+    font-style: oblique;
+    color:rgb(138, 130, 130);
+
+    grid-area: titre;
+}
+
+
+
+
+#scene{
+    position: relative;
+   
+    border-style: ridge;
+    border-color:rgb(77, 80, 90);
+     width: 960px;
+     height: 600px;
+   
+     margin: auto; 
+     margin-top: 0.8em;
+   /* background-color:rgb(138, 130, 130);*/
+   background-color:  rgb(199, 201, 206);
+     grid-area: scene;
+}
+
+#paddle{
+  
+      position:absolute;
+
+  
+  /* background-color: rgb(67, 68, 68);*/
+     
+     background-color: rgb(45, 49, 109);
+
+}
+
+#ball{
+
+ position:absolute;
+ border-radius: 1.5em;
+
+
+
+
+
+}
+
+
+.brick{
+  position:absolute;
+  border-style: double;
+ border-color:rgb(138, 130, 130);
+  background-color: rgb(45, 49, 109);
+ 
+
+
+}
+
+#choix{
+  position: absolute;
+  top: 270px;
+ left: 320px;
+ font-size: 1.5em;
+ color: rgb(51, 56, 121);
+ display: block;
+ 
+}
+
+
+option{
+background-color: rgb(199, 201, 206);
+color: rgb(51, 56, 121);
+
+
+}
+#score{
+  position: relative;
+  left: 1200px;
+  top:9px;
+ color: rgb(51, 56, 121);
+ font-size: 1.3em;
+ font-family: fantasy;
+ 
+ 
+}
+
+#startGame{
+color: rgb(51, 56, 121);;
+position: absolute;
+font-size: 2em;
+top:230px;
+left: 380px;
+
+}
+#life{
+  position: absolute;
+  left: 282px;
+  top:135px;
+ color: rgb(51, 56, 121);
+ font-size: 1.3em;
+ font-family: fantasy;
+
+
+}
+#level{
+  position: absolute;
+  left: 730px;
+  top:135px;
+ color: rgb(51, 56, 121);
+ font-size: 1.3em;
+ font-family: fantasy;
+
+
+}
+#time{
+  position: absolute;
+  left: 1000px;
+  top:135px;
+ color: rgb(51, 56, 121);
+ font-size: 1.3em;
+ font-family: fantasy;
+
+
+}

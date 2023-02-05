@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title> casse-brique! </title>
+  <meta name="description" content="Page de mon jeu ">
+  <meta name="author" content="Gracziela Sewodo">
+  <link rel="stylesheet" href="mystyle/style.css">
+ 
+  <script src="Javascript/model/Sprite.js"></script>
+   <script src="Javascript/model/Brick.js"></script>
+  <script src="Javascript/model/Paddle.js"></script>
+
+  <script src="Javascript/model/Position.js"></script>
+     <script src="Javascript/model/Dimension.js"></script>
+  <script src="Javascript/Util.js"></script>
+
+
+ 
+  <script src="Javascript/ctrl/PaddleCtrl.js"></script>
+
+  <script src="Javascript/model/Ball.js"></script>
+
+
+  <script src="Javascript/model/Movement.js"></script>
+  
+
+ 
+  <script src="Javascript/ctrl/BallCtrl.js"></script>
+  <script src="Javascript/model/Player.js"></script>
+  <script src="Javascript/model/Game.js"></script>
+  <script src="Javascript/view/View.js"></script>
+  <script src="Javascript/ctrl/GameCtrl.js"></script>
+  
+  <script src="Javascript/model/Color.js"></script>
+
+   
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="titre">casse-brique!
+      <p id="sousTitre">WEBG2-g52949-Sewodo</p>
+    </div>
+    <header>
+
+     <span id="time"> <span id="minutes"></span>:<span id="seconds"></span></span>
+     
+     
+     
+     <div id="scene">
+        
+   
+    </div>
+
+
+
+      <script>
+     
+        let game = new Game();
+        let color = new Color();
+         let view = new View();
+        let gameCtrl = new GameCtrl(game, view);
+        gameCtrl.display();
+       
+        gameCtrl.play();
+
+            </script>
+
+
+</body>
+
+</html>
